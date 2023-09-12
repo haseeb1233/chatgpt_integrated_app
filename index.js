@@ -38,10 +38,11 @@ const generate = async (prompt) => {
 
 
 // api request
+
   app.post("/generate-content", async(req,res)=>{
     const {type,subject}=req.body
 
-    const prompt=`can you create  ${type} from  ${subject}`
+    const prompt=` create  ${type} from  ${subject}`
 
     try {
         
