@@ -37,7 +37,7 @@ const generate = async (prompt) => {
 };
 
 
-
+// api request
   app.post("/generate-content", async(req,res)=>{
     const {type,subject}=req.body
 
@@ -54,16 +54,7 @@ const generate = async (prompt) => {
     }
 
   })
-
-
-
-  
-
-
-
-
-
-
+// connect to server
   app.listen(port,()=>{
     console.log(`server is running on ${port}`)
   })
